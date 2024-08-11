@@ -39,3 +39,8 @@ luac.out
 *.x86_64
 *.hex
 
+# mac
+.DS_Store
+
+# lazy.nvim
+lazy-lock.json
