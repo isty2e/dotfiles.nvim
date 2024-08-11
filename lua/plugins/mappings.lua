@@ -44,6 +44,9 @@ return {
           -- Ctrl combinations
           ["<C-s>"] = { "<C-d>", desc = "Colemak: Scroll down" },
           ["<C-l>"] = { "<C-u>", desc = "Colemak: Scroll up" },
+          ["<C-n>"] = { "<C-w>j", desc = "Colemak: Down window" },
+          ["<C-e>"] = { "<C-w>k", desc = "Colemak: Up window" },
+          ["<C-i>"] = { "<C-w>l", desc = "Colemak: Right window" },
           -- Additional mappings
           ["jj"] = { "yy", desc = "Colemak: Yank line" },
           ["dd"] = { "gg", desc = "Colemak: Go to first line" },
