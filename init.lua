@@ -21,10 +21,6 @@ end
 require "lazy_setup"
 require "polish"
 
-vim.cmd("set nornu")
-vim.cmd("colorscheme github_light")
-vim.cmd("set wrap")
-
 -- Colemak mapping
 vim.g.colemak_mapping = 1
 
@@ -75,3 +71,17 @@ colemak_to_qwerty()
 
 -- Set toggle shortcut
 vim.api.nvim_set_keymap('n', '<leader>cm', ':lua toggle_colemak_mapping()<CR>', { noremap = true, silent = true })
+
+-- other keybindings
+vim.api.nvim_set_keymap('n', '<C-n>', '<C-w>j', { noremap = true })
+vim.api.nvim_set_keymap('n', '<C-e>', '<C-w>k', { noremap = true })
+vim.api.nvim_set_keymap('n', '<C-i>', '<C-w>l', { noremap = true })
+
+vim.api.nvim_set_keymap('n', '<leader>k', ':tabe ', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>m', ':tabp<cr>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>.', ':tabn<cr>', { noremap = true })
+
+-- Set some default settings
+vim.cmd("set nornu")
+vim.cmd("colorscheme newpaper")
+vim.cmd("set wrap")
