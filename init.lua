@@ -19,7 +19,6 @@ if not pcall(require, "lazy") then
 end
 
 require "lazy_setup"
-require "polish"
 
 -- Colemak mapping
 vim.g.colemak_mapping = 1
