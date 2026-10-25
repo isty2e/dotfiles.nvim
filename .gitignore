@@ -41,6 +41,3 @@ luac.out
 
 # mac
 .DS_Store
-
-# lazy.nvim
-lazy-lock.json
